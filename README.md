@@ -1,4 +1,4 @@
-**Repository Name: Algorithmic Problem Solving Notebook**
+**Repository Name: dsa algorithm neetcode blind sheet solution**
 
 ## Overview
 
