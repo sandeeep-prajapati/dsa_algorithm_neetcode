@@ -10,3 +10,21 @@ The time complexity of this solution is O(n), where n is the number of elements 
 Space Complexity:
 The space complexity is O(1) since we are not using any additional data structures that depend on the input size. We only use a constant amount of extra space for the two pointers and other variables.
 """
+class Solution(object):
+    def twoSum(self, numbers, target):
+        """
+        :type numbers: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        left,right=0,len(numbers)-1
+        while left<right:
+            currentSum = numbers[left] + numbers[right]
+            if currentSum == target:
+                return [left+1,right+1]
+            elif currentSum<target:
+                left +=1
+            else :
+                right -=1
+        return [-1,-1]
+        
